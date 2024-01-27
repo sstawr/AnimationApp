@@ -29,7 +29,6 @@ final class ViewController: UIViewController {
         let duration: CGFloat
         let delay: CGFloat
         
-        
         if isFirstButtonTap {
             animationView.animation = presetName.text ?? ""
             animationView.curve = curveName.text ?? ""
@@ -63,9 +62,6 @@ final class ViewController: UIViewController {
         
         nextAnimation = randomAnimation.getRandomAnimation
         sender.setTitle("Run \(nextAnimation)", for: .normal)
-        
-        
     }
-    
 }
 
